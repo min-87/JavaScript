@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>China Town</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>China Town</h1>
+		<img class="lantern left" src="assets/img/lantern.svg">
+		<img class="lantern right" src="assets/img/lantern.svg">
+	</header>
+	<main>
+		<div class="house">
+			<img src="assets/img/roof.svg" class="roof">
+			<div class="block">
+				<div class="window">
+					<h2>Chef</h2>
+					<img src="assets/img/chef.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="house">
+			<img src="assets/img/roof.svg" class="roof">
+			<div class="block">
+				<div class="window">
+					<h2>Menu</h2>
+					<ul class="menu-list">
+						<li>FRIED RICE</li>
+						<li>PEKING DUG</li>
+						<li>STINKY TOFU</li>
+						<li>CHOW MEIN</li>
+						<li>CONGE</li>
+						<li>CHINESE HAMBURGER</li>
+						<li>SCALLION PANCAKES</li>
+						<li>KUNG PAO CHICKEN</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="order">
+		<h2>ORDER</h2>
+		<form id="order-form">
+			<label>Dish</label>
+			<input type="text" id="dish" placeholder="FRIED RICE">
+			<label>Time:</label>
+			<input type="time" id="time">
+			<label>Address:</label>
+			<input type="text" id="address" placeholder="Leipcizka str. 50a">
+			<label>Telephone:</label>
+			<input type="tel" id="tel" placeholder="+380000000">
+			<input type="submit" id="submit" value="Order">
+		</form>
+		<table id="order-table">
+			<tr>
+				<th>Dish</th>
+				<th>Time</th>
+				<th>Address</th>
+				<th>Telephone</th>
+				<th>Download</th>
+			</tr>
+		</table>
+	</section>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

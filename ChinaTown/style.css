@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "NinjaStrike";
+	color: #F3C43E;
+	text-shadow: 3px 3px 3px #000;
+}
+@font-face{
+	font-family: "NinjaStrike";
+	src: url("assets/fonts/NinjaStrike.otf");
+}
+body{
+	min-height: 100vh;
+	background-color: #9F0102;
+}
+h1{
+	text-align: center;
+	font-size: 3rem;
+}
+.lantern{
+	width: 20%;
+	position: fixed;
+	top: 10px;
+	animation: float 6s infinite;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: -1rem;
+}
+@keyframes float{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-1rem);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+.house{
+	margin: 0 20%;
+}
+.roof{
+	width: 100%;
+	display: block;
+}
+.block{
+	flex: 1;
+	border: 5px solid #000;
+	padding: 3rem;
+	margin: 0 3rem;
+	background-color: rgba(0,0,0,0.2);
+}
+.window{
+	border: inherit;
+	height: 100%;
+	text-align: center;
+	padding: 1rem;
+	background-color: #9F0102;
+}
+.window h2{
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+.window img{
+	width: 50%;
+	border-radius: 1rem;
+}
+.window ul{
+	list-style: none;
+	font-size: 1.5rem;
+}
+.order{
+	display: flex;
+	flex-direction: column;
+	margin: 0 3rem;
+}
+
+.order h2{
+	text-align: center;
+	font-size: 3rem;
+}
+#order-form{
+	margin: 0 auto;
+	width: 18rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1rem 0 2rem;
+	font-size: 2rem;
+}
+#order-form label{
+	font-family: initial;
+	font-weight: bold;
+}
+#order-form input{
+	font-family: initial;
+	text-shadow: initial;
+	background-color: navajowhite;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	margin: 0.5rem -0.2rem;
+	border: none;
+	font-size: 1.2rem;
+	color: initial;
+}
+#submit{
+	align-self: center;
+	cursor: pointer;
+	margin-top: 1rem;
+	padding: 1rem 2.5rem;
+	border-radius: 1.5rem;
+	font-weight: bold;
+}
+#submit:hover{
+	box-shadow: 0 0 1rem red;
+}
+main{
+	display: flex;
+	margin-bottom: 2.5rem;
+}
+.house{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin: 0 1.5rem;
+}
+#order-table{
+	margin-bottom: 2rem;
+}
+#order-table th:first-child{
+	border-top-left-radius: 1rem;
+}
+#order-table th:last-child{
+	border-top-right-radius: 1rem;
+}
+#order-table th{
+	background-color: #068b76;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+	font-family: initial;
+	font-weight: bold;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+}
+#order-table td{
+	border: 3px solid #068b76;
+	font-family: initial;
+	font-weight: bold;
+	padding: 0.5rem;
+}
+
+
+@media only screen and(max-width: 1020px){
+	main{
+		flex-direction: column;
+	}
+	.block{
+		padding: 1rem;
+		border: 3px solid #000;
+		font-size: 1.5rem;
+		margin-bottom: 3rem;
+	}
+}
