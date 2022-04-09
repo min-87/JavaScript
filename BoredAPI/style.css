@@ -1,0 +1,53 @@
+body{
+	padding: 5rem;
+	gap: 3rem;
+	background: linear-gradient(to right, #fdc830, #f37335);
+}
+#task{
+	margin: 0 auto;
+	width: 45rem;
+}
+#rnd-act-btn{
+	display: block;
+	margin: 3rem auto;
+	font-size: 3rem;
+	background-color: rgba(0,0,0,0.6);
+	border: none;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	border-radius: 1rem;
+}
+#rnd-act-btn:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+#rnd-act-btn:disabled:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+#rnd-act-btn:disabled{
+	background-color: rgba(0,0,0,0.8);
+	cursor: initial;
+}
+#activity{
+	font-size: 2rem;
+	background-color: rgba(255,255,255,0.2);
+	padding: 0.1rem 2rem;
+	border-radius: 1rem;
+}
+#filters{
+	font-size: 1.2rem;
+	text-align: center;
+}
+input{
+	background-color: rgba(0,0,0,0.6);
+	border: none;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+
+}
+#types{
+	margin: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
