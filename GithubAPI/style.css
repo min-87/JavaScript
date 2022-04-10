@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #90caf9;
+	text-align: center;
+}
+input{
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+#results{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2rem;
+	background-color: #fff;
+	margin: 2rem auto;
+	width: 30rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+img{
+	width: 15rem;
+}
