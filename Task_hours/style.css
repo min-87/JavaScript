@@ -1,0 +1,49 @@
+body{
+	padding: 0;
+	margin: 0px 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-rendering: optimizelegibility;
+}
+
+p {
+	font-size: 30px; 
+	line-height: 30px
+}
+
+div.demo{
+	text-align: center; 
+	width: 280px; 
+	float: left;
+	color: #EEE;
+	background: #222;
+	height: 420px;
+	width: 100%;
+}
+
+div.demo > p {
+	font-size: 20px
+}
+
+.container {
+	position: relative;
+	width: 350px;
+	margin: auto;
+}
+
+#hour_style {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#minute_style {
+	position: absolute;
+	left: 60px;
+	top: 60px;
+}
+#second_style {
+	position: absolute;
+	left: 110px;
+	top: 110px;
+}
